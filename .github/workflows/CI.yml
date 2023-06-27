@@ -85,7 +85,7 @@ jobs:
     - name: test the x86_64 build
       run: |
         wget https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Color_icon_red.png/240px-Color_icon_red.png
-        ./build-x86_64./realesrgan-ncnn-vulkan -n realesrgan-x4plus -i 240px-Color_icon_red.png -o 4x.png; true
+        ./build-x86_64/realesrgan-ncnn-vulkan -n realesrgan-x4plus -i 240px-Color_icon_red.png -o 4x.png; true
         cat ~/Library/Logs/DiagnosticReports/realesrgan-ncnn-vulkan-*
     - name: build-arm64
       run: |
